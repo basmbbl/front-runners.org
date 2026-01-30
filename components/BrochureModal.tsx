@@ -84,11 +84,10 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-backdrop" onClick={onClose}>
+    <div className="modal-backdrop">
       <div className="fixed inset-0 flex items-center justify-center p-4 z-50">
         <div
           className="bg-background rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto animate-scale-in"
-          onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-border">
