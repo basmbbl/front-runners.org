@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       images: [
         {
-          url: '/assets/hero-image.png',
+          url: 'https://front-runners.org/assets/og-image.png',
           width: 1200,
           height: 630,
           alt: 'Front Runners - HR Development Platform',
@@ -81,7 +81,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title,
       description,
-      images: ['/assets/hero-image.png'],
+      images: ['https://front-runners.org/assets/og-image.png'],
     },
     alternates: {
       canonical: `https://front-runners.org/${locale}`,

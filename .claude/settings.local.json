@@ -3,7 +3,8 @@
     "allow": [
       "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Front Runners website\n\n- Next.js 14 App Router with TypeScript\n- Tailwind CSS with custom design system\n- Multilingual support \\(NL/EN\\) with i18n\n- Responsive design with scroll-based animations\n- SEO optimized with Open Graph, Twitter Cards, JSON-LD\n- Components: Hero, WhySection, ProgramSection, CTASection, Footer\n- Modals: Login, Brochure request\n- Discord webhook integration for form submissions\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nPrevent brochure modal from closing on backdrop click\n\nModal can now only be closed via the X button.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(copy \"C:\\\\websites\\\\front-runners\\\\website\\\\public\\\\assets\\\\hero-image.png\" \"C:\\\\websites\\\\front-runners\\\\website\\\\public\\\\assets\\\\og-image.png\")"
     ]
   }
 }
