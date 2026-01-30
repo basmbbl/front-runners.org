@@ -15,9 +15,9 @@ export default function Hero({ onOpenBrochure }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-background py-20 md:py-32 lg:py-40">
       <div className="container mx-auto max-w-6xl px-4 md:px-6 relative z-10">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-stretch">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-8 items-stretch">
           {/* Content */}
-          <div className="flex flex-col justify-center space-y-8">
+          <div className="flex flex-col justify-center space-y-8 order-2 lg:order-1">
             <div className="space-y-4">
               {/* Badges */}
               <div className="flex flex-wrap items-center gap-3 animate-fade-in-up">
@@ -81,7 +81,7 @@ export default function Hero({ onOpenBrochure }: HeroProps) {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-scale-in animation-delay-200 flex items-center">
+          <div className="relative animate-scale-in animation-delay-200 flex items-center order-1 lg:order-2">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 w-full border border-border aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[420px]">
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10 pointer-events-none"></div>
