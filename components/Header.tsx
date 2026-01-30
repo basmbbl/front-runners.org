@@ -123,12 +123,6 @@ export default function Header({ onOpenBrochure }: HeaderProps) {
             {/* Mobile Menu Button */}
             <div className="flex md:hidden items-center gap-1">
               <button
-                onClick={() => toggleLanguage(locale === 'nl' ? 'en' : 'nl')}
-                className="p-2 text-muted-foreground hover:text-foreground"
-              >
-                <Globe size={20} />
-              </button>
-              <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="p-2 text-muted-foreground hover:text-foreground"
               >
@@ -164,6 +158,35 @@ export default function Header({ onOpenBrochure }: HeaderProps) {
                 {t.nav.community}
               </a>
               <div className="pt-3 border-t border-border space-y-3">
+                {/* Language Switcher - Mobile */}
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => {
+                      toggleLanguage('nl');
+                      setIsMenuOpen(false);
+                    }}
+                    className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-colors ${
+                      locale === 'nl'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'bg-muted text-foreground hover:bg-muted/80'
+                    }`}
+                  >
+                    Nederlands
+                  </button>
+                  <button
+                    onClick={() => {
+                      toggleLanguage('en');
+                      setIsMenuOpen(false);
+                    }}
+                    className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-colors ${
+                      locale === 'en'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'bg-muted text-foreground hover:bg-muted/80'
+                    }`}
+                  >
+                    English
+                  </button>
+                </div>
                 <button
                   onClick={() => {
                     setShowLoginModal(true);
