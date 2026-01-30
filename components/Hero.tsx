@@ -15,7 +15,7 @@ export default function Hero({ onOpenBrochure }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-background py-20 md:py-32 lg:py-40">
       <div className="container mx-auto max-w-6xl px-4 md:px-6 relative z-10">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-stretch">
           {/* Content */}
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-4">
@@ -81,16 +81,15 @@ export default function Hero({ onOpenBrochure }: HeroProps) {
           </div>
 
           {/* Hero Image */}
-          <div className="relative lg:ml-auto animate-scale-in animation-delay-200">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 w-full max-w-2xl mx-auto border border-border">
+          <div className="relative animate-scale-in animation-delay-200 flex items-center">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 w-full border border-border aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[420px]">
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10 pointer-events-none"></div>
               <Image
                 src="/assets/hero-image.png"
                 alt="Front Runners Team"
-                width={672}
-                height={504}
-                className="object-cover w-full h-auto"
+                fill
+                className="object-cover"
                 priority
                 unoptimized
               />
