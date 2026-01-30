@@ -13,7 +13,7 @@ export default function Hero({ onOpenBrochure }: HeroProps) {
   const { t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-background py-20 md:py-32 lg:py-40">
+    <section className="relative overflow-hidden bg-background pt-6 pb-16 md:py-32 lg:py-40">
       <div className="container mx-auto max-w-6xl px-4 md:px-6 relative z-10">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-8 items-stretch">
           {/* Content */}
