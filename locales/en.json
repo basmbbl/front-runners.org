@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Front Runners - Learn Together. Grow Together.",
+    "description": "Front Runners helps organizations structurally grow towards better employership."
+  },
+  "nav": {
+    "about": "About us",
+    "program": "Program",
+    "community": "Community",
+    "login": "Login",
+    "join": "Join"
+  },
+  "hero": {
+    "badge": "Starting September 2026",
+    "title": "Learn together.",
+    "titleHighlight": "Grow together.",
+    "subtitle": "Front Runners helps organizations – through learning, connection, and practice – structurally grow towards better employership.",
+    "downloadBrochure": "Download Brochure",
+    "viewProgram": "View Program",
+    "targetAudience": "For organizations with 1-10 HR professionals",
+    "noAudits": "No audits, focus on growth",
+    "aiPowered": "AI-powered learning platform"
+  },
+  "why": {
+    "title": "Why Front Runners?",
+    "subtitle": "We believe that employership will become the distinguishing force in the coming years. We believe that good employership is no longer a side issue, but a strategic prerequisite for remaining future-proof as an organization.",
+    "features": {
+      "future": {
+        "title": "Future-focused",
+        "description": "No audits or judgment about the current situation; the focus is on development direction and continuous learning."
+      },
+      "businesscase": {
+        "title": "Annual Business Case",
+        "description": "One concrete business case that you develop and implement as an organization. This makes growth tangible."
+      },
+      "community": {
+        "title": "Learning Community",
+        "description": "Inspiration through company visits, roundtables, peer-learning, and keynotes. Together we are stronger."
+      },
+      "recognition": {
+        "title": "Unique Recognition",
+        "description": "Earn points for your business case, effort and growth, and receive official Front Runners Recognition."
+      }
+    }
+  },
+  "program": {
+    "title": "A Year of Growth",
+    "subtitle": "The Front Runners annual program is designed to stimulate continuous development without overloading daily operations.",
+    "steps": {
+      "online": {
+        "title": "Online Learning Environment",
+        "description": "Access to AI modules, AI frameworks, templates, and the exclusive community forum."
+      },
+      "offline": {
+        "title": "Learning Sessions",
+        "description": "At least 4 practical HR masterclasses per year with guest speakers from top organizations."
+      },
+      "events": {
+        "title": "Community & Events",
+        "description": "Company visits, roundtables, theme sessions, and HR masterclasses."
+      }
+    }
+  },
+  "recognition": {
+    "title": "The Recognition",
+    "subtitle": "Earn points through the business case and active participation in the program. With sufficient points, your organization receives official Front Runners Recognition.",
+    "levels": {
+      "bronze": {
+        "name": "Bronze",
+        "score": "80-85% score",
+        "description": "Your organization demonstrably actively participates in the program and has developed a coherent, substantiated business case that meets the basic criteria."
+      },
+      "silver": {
+        "name": "Silver",
+        "score": "85-90% score",
+        "description": "Your organization makes a consistent and active contribution to the program and has a well-developed business case with clear analysis, choices, and learning objectives."
+      },
+      "gold": {
+        "name": "Gold",
+        "score": "90-95% score",
+        "description": "Your organization distinguishes itself through a high degree of involvement and a strong, high-quality business case that leads to concrete and measurable improvements in employership."
+      },
+      "platinum": {
+        "name": "Platinum",
+        "score": "95-100% score",
+        "description": "Your organization belongs to the leading group of participants and combines exceptional involvement with an excellent business case that demonstrably has impact and is directional for other organizations within the program."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to take the next step?",
+    "subtitle": "Join the front runners of tomorrow. Start your growth path towards better employership today.",
+    "button": "Request brochure"
+  },
+  "footer": {
+    "tagline": "The program for organizations that want to invest in learning, HR development, and modern employership.",
+    "program": "Program",
+    "links": {
+      "businesscase": "Business Case",
+      "colleges": "Learning Sessions",
+      "community": "Community",
+      "recognition": "Recognition"
+    },
+    "contact": "Contact",
+    "copyright": "© 2026 Front Runners. All rights reserved."
+  },
+  "modal": {
+    "title": "Request brochure",
+    "subtitle": "Fill in your details and receive our brochure with all information about the Front Runners program.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "company": "Organization",
+      "phone": "Phone number (optional)",
+      "role": "Position",
+      "employees": "Number of employees",
+      "message": "Message (optional)",
+      "submit": "Submit request",
+      "submitting": "Submitting...",
+      "success": "Thank you! We will contact you as soon as possible.",
+      "error": "Something went wrong. Please try again later."
+    },
+    "employeeOptions": {
+      "select": "Select...",
+      "small": "1-50 employees",
+      "medium": "51-200 employees",
+      "large": "201-500 employees",
+      "enterprise": "500+ employees"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "subtitle": "Log in to your Front Runners account",
+    "email": "Email address",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "submit": "Login",
+    "noAccount": "No account yet?",
+    "register": "Register here",
+    "comingSoon": "The member portal will be launched in September 2026."
+  }
+}

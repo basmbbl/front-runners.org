@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Front Runners - Samen leren. Samen groeien.",
+    "description": "Front Runners helpt organisaties om structureel te groeien naar beter werkgeverschap."
+  },
+  "nav": {
+    "about": "Over ons",
+    "program": "Programma",
+    "community": "Community",
+    "login": "Inloggen",
+    "join": "Deelnemen"
+  },
+  "hero": {
+    "badge": "Start september 2026",
+    "title": "Samen leren.",
+    "titleHighlight": "Samen groeien.",
+    "subtitle": "Front Runners helpt organisaties om – op een lerende, verbonden en praktijkgerichte manier – structureel te groeien naar beter werkgeverschap.",
+    "downloadBrochure": "Download Brochure",
+    "viewProgram": "Bekijk programma",
+    "targetAudience": "Gericht op organisaties met 1-10 HR-professionals",
+    "noAudits": "Geen audits, focus op groei",
+    "aiPowered": "AI-gedreven leerplatform"
+  },
+  "why": {
+    "title": "Waarom Front Runners?",
+    "subtitle": "Wij geloven dat goed werkgeverschap geen bijzaak meer is, maar een strategische voorwaarde om als organisatie toekomstbestendig te blijven.",
+    "features": {
+      "future": {
+        "title": "Toekomstgericht",
+        "description": "Geen audits of oordeel over de huidige situatie; de focus ligt op de ontwikkelrichting en het continue blijven leren."
+      },
+      "businesscase": {
+        "title": "Jaarlijkse businesscase",
+        "description": "Eén concrete businesscase die jullie als organisatie ontwikkelen en implementeren. Zo wordt groei tastbaar."
+      },
+      "community": {
+        "title": "Lerende community",
+        "description": "Inspiratie via bedrijfsbezoeken, roundtables, peer-learning en keynotes. Samen staan we sterker."
+      },
+      "recognition": {
+        "title": "Unieke erkenning",
+        "description": "Verdien punten voor jullie business case, inzet en groei, en ontvang de officiële Front Runners erkenning."
+      }
+    }
+  },
+  "program": {
+    "title": "Een jaar vol groei",
+    "subtitle": "Het Front Runners jaarprogramma is ontworpen om continue ontwikkeling te stimuleren zonder de dagelijkse operatie te overbelasten.",
+    "steps": {
+      "online": {
+        "title": "Online leeromgeving",
+        "description": "Toegang tot AI-modules, AI-frameworks, templates en het exclusieve community forum."
+      },
+      "offline": {
+        "title": "Leercolleges",
+        "description": "Minimaal 4 keer per jaar praktische HR masterclasses en gastsprekers uit toporganisaties."
+      },
+      "events": {
+        "title": "Community & events",
+        "description": "Bedrijfsbezoeken, roundtables, themasessies en HR masterclasses."
+      }
+    }
+  },
+  "recognition": {
+    "title": "De erkenning",
+    "subtitle": "Verdien punten door de businesscase en actief deel te nemen aan het programma. Bij voldoende punten ontvangt jouw organisatie de officiële Front Runners Erkenning.",
+    "levels": {
+      "bronze": {
+        "name": "Bronze",
+        "score": "80-85% score",
+        "description": "Je organisatie neemt aantoonbaar actief deel aan het programma en heeft een inhoudelijk samenhangende, onderbouwde businesscase ontwikkeld die voldoet aan de basiscriteria."
+      },
+      "silver": {
+        "name": "Silver",
+        "score": "85-90% score",
+        "description": "Je organisatie levert een consistente en actieve bijdrage aan het programma en beschikt over een goed uitgewerkte businesscase met duidelijke analyse, keuzes en leerdoelen."
+      },
+      "gold": {
+        "name": "Gold",
+        "score": "90-95% score",
+        "description": "Je organisatie onderscheidt zich door een hoge mate van betrokkenheid en een sterke, kwalitatief hoogwaardige businesscase die leidt tot concrete en meetbare verbeteringen in het werkgeverschap."
+      },
+      "platinum": {
+        "name": "Platinum",
+        "score": "95-100% score",
+        "description": "Je organisatie behoort tot de kopgroep van deelnemers en combineert uitzonderlijke betrokkenheid met een excellente businesscase die aantoonbaar impact heeft én richtinggevend is voor andere organisaties binnen het programma."
+      }
+    }
+  },
+  "cta": {
+    "title": "Klaar om de volgende stap te zetten?",
+    "subtitle": "Sluit je aan bij de Front Runners van morgen. Start vandaag met jouw groeipad naar beter werkgeverschap.",
+    "button": "Vraag informatie aan"
+  },
+  "footer": {
+    "tagline": "Hét programma voor organisaties die werk willen maken van leren, HR-ontwikkeling en modern werkgeverschap.",
+    "program": "Programma",
+    "links": {
+      "businesscase": "Businesscase",
+      "colleges": "Leercolleges",
+      "community": "Community",
+      "recognition": "Erkenning"
+    },
+    "contact": "Contact",
+    "copyright": "© 2026 Front Runners. Alle rechten voorbehouden."
+  },
+  "modal": {
+    "title": "Vraag brochure aan",
+    "subtitle": "Vul je gegevens in en ontvang onze brochure met alle informatie over het Front Runners programma.",
+    "form": {
+      "name": "Volledige naam",
+      "email": "E-mailadres",
+      "company": "Organisatie",
+      "phone": "Telefoonnummer (optioneel)",
+      "role": "Functie",
+      "employees": "Aantal medewerkers",
+      "message": "Bericht (optioneel)",
+      "submit": "Verstuur aanvraag",
+      "submitting": "Versturen...",
+      "success": "Bedankt! We nemen zo snel mogelijk contact met je op.",
+      "error": "Er is iets misgegaan. Probeer het later opnieuw."
+    },
+    "employeeOptions": {
+      "select": "Selecteer...",
+      "small": "1-50 medewerkers",
+      "medium": "51-200 medewerkers",
+      "large": "201-500 medewerkers",
+      "enterprise": "500+ medewerkers"
+    }
+  },
+  "login": {
+    "title": "Inloggen",
+    "subtitle": "Log in op je Front Runners account",
+    "email": "E-mailadres",
+    "password": "Wachtwoord",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "submit": "Inloggen",
+    "noAccount": "Nog geen account?",
+    "register": "Registreer hier",
+    "comingSoon": "Het ledenportaal wordt in september 2026 gelanceerd."
+  }
+}

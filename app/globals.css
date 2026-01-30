@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 500;
+  background: #ffffff;
+  color: #0f1729;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+::selection {
+  background-color: rgba(34, 179, 195, 0.3);
+  color: #0b2c75;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50;
+    @apply min-h-10 py-2 px-6 bg-primary text-primary-foreground hover:bg-primary/90 border border-primary;
+    @apply shadow-sm hover:shadow-lg active:shadow-none;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50;
+    @apply min-h-10 py-2 px-6 border border-primary/20 text-primary hover:bg-primary/5;
+    @apply shadow-sm active:shadow-none;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-lg transition-colors;
+  }
+
+  .card {
+    @apply rounded-xl border border-border/60 text-card-foreground shadow hover:border-secondary/50 transition-colors hover:shadow-lg bg-background/50 backdrop-blur-sm;
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 md:px-6;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  @apply fixed inset-0 bg-black/80 backdrop-blur-sm z-50;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Recognition level colors */
+.level-bronze {
+  @apply text-amber-700 font-bold;
+}
+
+.level-silver {
+  @apply text-slate-400 font-bold;
+}
+
+.level-gold {
+  @apply text-yellow-500 font-bold;
+}
+
+.level-platinum {
+  @apply text-primary-foreground font-bold;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  @apply outline-none ring-2 ring-ring ring-offset-2;
+}
+
+/* Language switcher */
+.lang-switch {
+  @apply flex items-center gap-1 px-2 py-1 rounded-md text-sm font-medium transition-colors;
+}
+
+.lang-switch:hover {
+  @apply bg-muted;
+}
+
+.lang-switch.active {
+  @apply bg-primary/10 text-primary;
+}
+
+/* Page load animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.15s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.45s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.6s;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.75s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.9s;
+}
+
+/* Arrow bounce animation */
+@keyframes bounceRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-bounce-right {
+  animation: bounceRight 1.5s ease-in-out infinite;
+}
