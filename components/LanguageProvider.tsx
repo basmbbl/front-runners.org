@@ -1,7 +1,9 @@
 'use client';
 
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
-import { Locale, getTranslations, defaultLocale } from '@/lib/i18n';
+import React, { createContext, useContext, useCallback } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
+import { type Locale, defaultLocale, isValidLocale } from '@/lib/i18n-config';
+import { getTranslations } from '@/lib/i18n';
 import nl from '@/locales/nl.json';
 
 type Translations = typeof nl;
@@ -16,35 +18,26 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 interface LanguageProviderProps {
   children: React.ReactNode;
-  initialLocale?: Locale;
+  initialLocale?: string;
 }
 
 export function LanguageProvider({ children, initialLocale = defaultLocale }: LanguageProviderProps) {
-  const [locale, setLocaleState] = useState<Locale>(initialLocale);
-  const [translations, setTranslations] = useState<Translations>(getTranslations(initialLocale));
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // Validate and use the locale
+  const locale: Locale = isValidLocale(initialLocale) ? initialLocale : defaultLocale;
+  const translations = getTranslations(locale);
 
   const setLocale = useCallback((newLocale: Locale) => {
-    setLocaleState(newLocale);
-    setTranslations(getTranslations(newLocale));
-    
-    // Store preference in localStorage
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('preferred-locale', newLocale);
-    }
-    
-    // Update html lang attribute
-    document.documentElement.lang = newLocale;
-  }, []);
+    // Get the current path without the locale prefix
+    const segments = pathname.split('/');
+    segments[1] = newLocale; // Replace the locale segment
+    const newPath = segments.join('/');
 
-  // Check for stored preference on mount
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const storedLocale = localStorage.getItem('preferred-locale') as Locale | null;
-      if (storedLocale && (storedLocale === 'nl' || storedLocale === 'en')) {
-        setLocale(storedLocale);
-      }
-    }
-  }, [setLocale]);
+    // Navigate to the new locale path
+    router.push(newPath);
+  }, [pathname, router]);
 
   return (
     <LanguageContext.Provider value={{ locale, t: translations, setLocale }}>
